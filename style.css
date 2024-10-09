@@ -1,0 +1,95 @@
+.mainHead {
+  font-size: 36px; /* Large, clear font size */
+  color: #ff416c; /* Attractive gradient-inspired color */
+  text-align: center; /* Center-align the heading */
+  font-weight: bold; /* Make the font stand out */
+  text-transform: uppercase; /* Transform the text to uppercase for emphasis */
+  letter-spacing: 2px; /* Add spacing between letters */
+  background: linear-gradient(
+    135deg,
+    #ff416c,
+    #1567e2
+  ); /* Gradient background */
+  -webkit-background-clip: text; /* Clip background to the text */
+  -webkit-text-fill-color: transparent; /* Fill color using the background */
+  margin-bottom: 20px; /* Add space below the heading */
+  padding: 10px; /* Add some padding for breathing room */
+}
+
+/* Centering and card box styling */
+.cardBox {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  background-color: #f7f9fc;
+}
+/* Card design */
+.card {
+  width: 550px;
+  height: 400px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Header (question) styling */
+.card h1 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+/* Button styling */
+.card .opt {
+  width: 100%;
+  padding: 10px 0;
+  margin: 10px 0;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  background-color: #e7e7e7;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.card .opt:hover {
+  background-color: #bdc6d4;
+}
+
+.card .btn {
+  background-color: rgb(54, 208, 213);
+  border: none;
+}
+
+.card .btn:hover {
+  background-color: rgb(3, 152, 168);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .card h1 {
+    font-size: 20px;
+  }
+
+  .card button {
+    font-size: 14px;
+  }
+}
